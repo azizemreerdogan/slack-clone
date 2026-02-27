@@ -2,6 +2,7 @@ package com.example.slack_clone.entity;
 
 import com.example.slack_clone.entity.enums.MemberStatus;
 import com.example.slack_clone.entity.enums.Role;
+import com.example.slack_clone.workspace.Workspace;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
