@@ -1,7 +1,9 @@
 package com.example.slack_clone.exception;
 
-public class WorkspaceNameIsUsedException extends RuntimeException{
+import org.springframework.http.HttpStatus;
+
+public class WorkspaceNameIsUsedException extends BusinessExceptions{
     public WorkspaceNameIsUsedException(String message){
-        super(message);
+        super(message, HttpStatus.CONFLICT);
     }
 }

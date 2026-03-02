@@ -1,7 +1,9 @@
 package com.example.slack_clone.exception;
 
-public class WorkspaceIsNotFound extends RuntimeException{
+import org.springframework.http.HttpStatus;
+
+public class WorkspaceIsNotFound extends BusinessExceptions{
     public WorkspaceIsNotFound(String message){
-        super(message);
+        super(message, HttpStatus.NOT_FOUND);
     }
 }
